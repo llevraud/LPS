@@ -8,12 +8,11 @@ def load_images():
     image_files = glob.glob("./resizes/*.jpg")
   #  st.write(image_files)
     name_files=[]
-    names=[]
+
     for image_file in image_files:
         image_file = image_file.replace("\\","/")
         parts = image_file.split("_")
-        #names = parts[-1].split()
-       #parts = parts.split(".")
+     
         if parts[-1] not in name_files:
             name_files.append(parts[-1])
             #names.append(parts[0])
@@ -23,7 +22,7 @@ def load_images():
     return image_files, name_files#, names
 
 st.title("Mes Pets Shop")
-st.write("""### Tableau de LPS """)
+st.write("""### Tableau de mes LPS """)
 n = st.number_input("Sélectionne le nombre de colonne",1,5,4)
 image_files, name_files = load_images()
 
@@ -53,4 +52,3 @@ for group in groups:
         
         cols[i].image(image_file, caption=str(names_files))
 #st.write(i,image_files[i])
-st.columns(1)
