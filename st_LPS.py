@@ -34,12 +34,12 @@ for image_file in image_files:
         view_images.append(image_file)
         
 groups=[]
-names_group=[]
+#names_group=[]
 for i in range(0,len(view_images),n):
     groups.append(view_images[i:i+n])
 
-for i in range(0,len(name_files),n): 
-    names_group.append(name_files[i:i+n])
+#for i in range(0,len(name_files),n): 
+#   names_group.append(name_files[i:i+n])
                  
 #st.write(groups) #pour controler la création de groupe
 
