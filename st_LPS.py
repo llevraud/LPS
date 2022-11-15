@@ -20,7 +20,7 @@ def load_images():
     #st.write(name_files)
         
     return image_files, name_files#, names
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide")  #utilise toute la largeur de la page
 st.title("Mes Pets Shop")
 st.write("""### Tableau de mes LPS """)
 n = st.number_input("Sélectionne le nombre de colonne",1,5,4)
