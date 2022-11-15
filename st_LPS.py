@@ -6,7 +6,7 @@ import glob,os
 
 def load_images():
    # image_files = glob.glob("./*/*.jpg")  #multirepertories
-    image_files = glob.glob("./resizes/*.jpg")
+    image_files = sorted(glob.glob("./resizes/*.jpg"))
     name_files=[]
 
     for image_file in image_files:
